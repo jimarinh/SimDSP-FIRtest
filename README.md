@@ -1,7 +1,7 @@
 # SimDSP-FIRtest
 ## Test an FIR filter on SimDSP for Android
 
-This program implements a FIR filter using a block-processing strategy. To run this program you need to install SimDSP for Android and the compiler tool-chain as described in [SimDSP Project WebSite] (https://github.com/parrado/SimDSP-Android). 
+This program implements a FIR filter using a block-processing strategy. To run this program you need to install SimDSP for Android and the compiler tool-chain as described in [SimDSP Project WebSite](https://github.com/parrado/SimDSP-Android). 
 
 Once SimDSP is installed just download release or clone this repository, and choose the option *Terminal > Run Build Task* on *VisualStudio Code*.  
 
