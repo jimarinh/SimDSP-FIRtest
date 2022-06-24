@@ -35,8 +35,9 @@ void process_data(short *x){
 
   //Inicia procesamiento
   for(n=0;n<N_DATA;n++){
+    y[n] = 0;
     for(k=0; k<Nh; k++) {
-      y[n] = h[k] * xt[n-k+Nh-1]; 
+      y[n] += h[k] * xt[n-k+Nh-1]; 
     }
   }
 
@@ -61,8 +62,4 @@ void dsp_setup()
 
   //Inicia captura por DMA
   captureBlock(process_data );
-}
-
-void dsp_loop(){
-
 }
