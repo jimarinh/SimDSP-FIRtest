@@ -23,6 +23,7 @@ void process_data(short *x){
 
   //Para los ciclos for
   int n, k;
+  float yt;
 
   //Invoca captura por DMA nuevamente
   captureBlock(process_data );
@@ -35,10 +36,11 @@ void process_data(short *x){
 
   //Inicia procesamiento
   for(n=0;n<N_DATA;n++){
-    y[n] = 0;
+    yt = 0;
     for(k=0; k<Nh; k++) {
-      y[n] += h[k] * xt[n-k+Nh-1]; 
+      yt += h[k] * xt[n-k+Nh-1]; 
     }
+    y[n] = yt;
   }
 
   //Reproduce señal
